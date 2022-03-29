@@ -70,10 +70,32 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'What is ...',
+        question: 'What is not a JavaScript datatype?',
         answers: [
-            {text: '4', correct: true },
-            {text: '22', correct: false }
-        ]
+            {text: 'NaN', correct: true },
+            {text: 'Object', correct: false },
+            {text: 'Boolean', correct: false },
+            {text: 'String', correct: false }
+        ],
+
+        question: 'What are all the looping structures in JavaScript?',
+        answers: [
+            {text: 'If-Then, While, Else', correct: false },
+            {text: 'Do-while, While loops', correct: false },
+            {text: 'For, While, Do-while loops', correct: true },
+            {text: 'For, If-Then loops', correct: false }
+        ],
+
+        question: 'What are all the looping structures in JavaScript?',
+        answers: [
+            {text: 'If-Then, While, Else', correct: false },
+            {text: 'Do-while, While loops', correct: false },
+            {text: 'For, While, Do-while loops', correct: true },
+            {text: 'For, If-Then loops', correct: false }
+        ],
+
+
+        
     }
+
 ]
