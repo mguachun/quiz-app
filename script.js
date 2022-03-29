@@ -86,13 +86,21 @@ const questions = [
             {text: 'For, If-Then loops', correct: false }
         ],
 
-        question: 'What are all the looping structures in JavaScript?',
+        question: 'What is the pop() method used for?',
         answers: [
-            {text: 'If-Then, While, Else', correct: false },
-            {text: 'Do-while, While loops', correct: false },
-            {text: 'For, While, Do-while loops', correct: true },
-            {text: 'For, If-Then loops', correct: false }
+            {text: 'The pop() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.', correct: false },
+            {text: 'The pop() method adds one or more elements to the end of an array and returns the new length of the array.', correct: false },
+            {text: 'The pop() method removes the first element from an array and returns that removed element. This method changes the length of the array.', correct: false },
+            {text: 'The pop() method takes the last element off of the given array and returns it. The array on which it is called is then altered', correct: true }
         ],
+
+        question: 'What is the data type of variables in JavaScript?',
+        answers: [
+            {text: 'All variables in JavaScript are boolean data types.', correct: false },
+            {text: 'All variables in JavaScript are object data types.', correct: true },
+            {text: 'All variables in JavaScript are string data types.', correct: false },
+            {text: 'All variables in JavaScript are integer data types.', correct: false }
+        ]
 
 
         
