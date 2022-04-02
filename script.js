@@ -3,6 +3,10 @@ const nextButton = document.getElementById('next-btn')
 
 const questionContainerElement = document.getElementById('question-container')
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
@@ -52,6 +56,17 @@ function selectAnswer(e) {
       startButton.classList.remove('hide')
     }
   }
+
+  function setStatusClass(element, correct) {
+      clearStatusClass(element)
+      if (correct) {
+
+          element.classList.add('correct')
+      } else {
+           element.classList.add('wrong') 
+
+      }
+  }
   
 
   function resetState() {
@@ -76,7 +91,9 @@ const questions = [
             {text: 'Object', correct: false },
             {text: 'Boolean', correct: false },
             {text: 'String', correct: false }
-        ],
+        ]
+    },
+    {
 
         question: 'What are all the looping structures in JavaScript?',
         answers: [
@@ -84,16 +101,19 @@ const questions = [
             {text: 'Do-while, While loops', correct: false },
             {text: 'For, While, Do-while loops', correct: true },
             {text: 'For, If-Then loops', correct: false }
-        ],
+        ]
+    },
 
+    {
         question: 'What is the pop() method used for?',
         answers: [
             {text: 'The pop() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.', correct: false },
             {text: 'The pop() method adds one or more elements to the end of an array and returns the new length of the array.', correct: false },
             {text: 'The pop() method removes the first element from an array and returns that removed element. This method changes the length of the array.', correct: false },
             {text: 'The pop() method takes the last element off of the given array and returns it. The array on which it is called is then altered', correct: true }
-        ],
-
+        ]
+    },
+    {
         question: 'What is the data type of variables in JavaScript?',
         answers: [
             {text: 'All variables in JavaScript are boolean data types.', correct: false },
