@@ -121,9 +121,19 @@ const questions = [
             {text: 'All variables in JavaScript are string data types.', correct: false },
             {text: 'All variables in JavaScript are integer data types.', correct: false }
         ]
-
-
-        
+    
+    },
+    {
+        question: 'What are the ways to define a variable in JavaScript?',
+        answers: [
+            {text: 'while, var, let', correct: false },
+            {text: 'var, const, for', correct: false },
+            {text: 'for, while, if.', correct: false },
+            {text: 'var, const, let', correct: true }
+        ]
+    
     }
+
+
 
 ]
