@@ -128,8 +128,18 @@ const questions = [
         answers: [
             {text: 'while, var, let', correct: false },
             {text: 'var, const, for', correct: false },
-            {text: 'for, while, if.', correct: false },
+            {text: 'for, while, if', correct: false },
             {text: 'var, const, let', correct: true }
+        ]
+    
+    },
+    {
+        question: 'In how many ways a JavaScript code can be involved in an HTML file?',
+        answers: [
+            {text: 'Local, Internal, External', correct: false },
+            {text: 'Inline, Internal, External', correct: true },
+            {text: 'Local, Universal, Inline', correct: false },
+            {text: 'Inline, External, Universal', correct: false }
         ]
     
     }
