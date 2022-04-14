@@ -142,7 +142,17 @@ const questions = [
             {text: 'Inline, External, Universal', correct: false }
         ]
     
-    }
+    },
+    {
+        question: 'How to write a comment in JavaScript?',
+        answers: [
+            {text: 'Both: Single Line Comment: It is represented by // (double forward slash) and Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */', correct: true },
+            {text: 'Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */', correct: true },
+            {text: 'Single Line Comment: It is represented by // (double forward slash)', correct: false },
+            {text: 'Double dash: It is represented by --', correct: false }
+        ]
+    
+    },
 
 
 
